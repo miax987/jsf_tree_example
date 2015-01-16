@@ -49,6 +49,9 @@ Platform: Eclipse Luna SR1 (4.4.1)
 3. Choose Dynamic Web Module version 3.1
 4. Modify Configuration to have JavaServer Faces 2.2
 5. After the project is created, use project -> Configure to convert the project into a Maven Project
+6. 
+
+
 
 
 
