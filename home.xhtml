@@ -19,6 +19,13 @@
             <rich:tree style="width:300px" nodeSelectListener="#{simpleTreeBean.processSelection}" 
                 reRender="selectedNode" ajaxSubmitSelection="true"  switchType="client"
                 value="#{simpleTreeBean.treeNode}" var="item" ajaxKeys="#{null}">
+                  <rich:treeNode >
+    					<h:selectBooleanCheckbox>
+           				<a4j:support event="onclick" reRender="tree">
+           				</a4j:support>
+    					</h:selectBooleanCheckbox>
+    					<h:outputText value="#{item}" /> 
+					</rich:treeNode>
             </rich:tree>
             
             <h:outputText escape="false" value="Selected Node 2: #{simpleTreeBean.nodeTitle}" id="selectedNode" />
